@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moon Jo's Website</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+    </link>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    </link>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    </link>
+    <!-- fonts end -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </link>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossOrigin="anonymous">
+    </link>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<style>
+
+
+    /* general */
+
+    /* title of every page*/
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 75px;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+/* paragraph in "about me"*/
+
+p, h2, h5 {
+    line-height: 1.6;
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+
+
+/* general end */
+
+
+/* header */
+
+.navbar-expand-lg {
+
+background-color: black;
+}
+
+    .navbar-brand-image {
+    width: 25px;
+    height: 25px;
+}
+
+.ul-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* dark but not full black */
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.li-nav {
+    float: left;
+}
+
+    /* if it's nested, you have to include the parent element's class*/
+    .li-nav .a-nav {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        /* removes underline from the link */
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    }
+    /* Change the link color to #111 (black) on hover */
+    .li-nav a:hover {
+        background-color: #111;
+    }
+
+.active {
+    background-color: DodgerBlue;
+}
+
+section {
+    height: 100vh;
+    width: auto;
+}
+
+/* header end */
+
+/* home */
+
+section {
+    height: 100vh;
+    width: auto;
+}
+
+#resume {
+    background-color: antiquewhite;
+}
+
+
+
+/*vertical center*/
+.bio {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/*center div horizontally and vertically*/
+#homeTitle {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+/*fade in*/
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*fade in*/
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+#home {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    min-height: 400px;
+    background-color: transparent;
+    position: relative;
+    display: table;
+}
+
+/* home end */
+
+/* about */
+
+.portrait-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div-about-me {
+    margin: auto;
+    width: 50%;
+}
+
+
+
+.s-about {
+    padding-bottom: 6rem;
+    background-color: #FFFFFF;
+    position: relative;
+    height: auto;
+}
+
+.about-content {
+    margin-bottom: 3rem;
+}
+
+    .about-content .left {
+        padding-right: 40px;
+    }
+
+    .about-content .right {
+        padding-left: 40px;
+    }
+
+    .about-content p {
+        text-align: left;
+    }
+
+/* download button */
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+    /* Darker background on mouse-over */
+    .btn:hover {
+        background-color: RoyalBlue;
+    }
+
+
+
+/* about end */
+
+
+
+/* resume */
+
+
+/* ul remove indent (list-style-position: inside;)*/
+
+.ul-resume {
+    padding: 0;
+    list-style-position: inside;
+}
+
+
+/* 'height: auto' to make the section adjust to fit whatever content is inside*/
+.s-resume {
+    padding-bottom: 6rem;
+    background-color: antiquewhite;
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
+.div-resume {
+    margin: auto;
+    width: 65%;
+}
+
+/* resume end */
+
+
+/* portfolio */
+
+
+.s-portfolio {
+    padding-bottom: 6rem;
+    background-color: powderblue;
+    position: relative;
+    height: auto;
+}
+
+.portfolio {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .portfolio a {
+        color: black;
+    }
+
+    /* hover over effect */
+
+
+.container {
+  position: relative;
+  width: 50%;
+  /* 'padding: 0' to make hover div match the image size */
+  padding: 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+    /* how visible the hover text is */
+  opacity: 0.9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+
+    /* portfolio end */
+
+    /* contact */
+
+.s-contact {
+    padding-bottom: 6rem;
+    background-color: #FFFFFF;
+    position: relative;
+    height: 50%;
+}
+
+
+
+.social-media {
+    line-height: 2;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.social-media a {
+    color: black
+}
+
+.contact {
+    display: inline;
+}
+
+/* contact end */
+
+/* footer */
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 4.2rem 0 4.2rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+/* footer end */
+
+
+
+</style>
+
+<!-- data-spy="scroll" and data-target=".navbar" to make the navbar highlight certain sections on scroll -->
+
+<body style="padding: 0" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- script -->
+
+    <!-- script end -->
+
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand"><img class="navbar-brand-image" src="crescent moon color right.png"></img></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" style="font-family: 'Source Sans Pro', sans-serif; font-size: '16px'">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    </nav>
+    <!-- header end -->
+
+
+    <!-- home -->
+
+
+    <section id="home">
+        <div id="homeTitle" style="margin-left: '0px'">
+            <h4 style="font-family: 'Roboto', sans-serif; text-align: center; color: white">Welcome to</h4>
+            <h1 style="font-family: 'Roboto', sans-serif; font-size: 80px; padding: 0px; text-align: center; color: white">Moon
+                Jo's Website</h1>
+            <h4 style="font-family: 'Roboto', sans-serif; text-align: center; color: white">Full Stack
+                Developer</h4>
+        </div>
+    </section>
+    <!-- home end -->
+
+    <!-- about -->
+
+    <section id="about" class="s-about target-section">
+        <div>
+            <h1>About Me</h1>
+            <div class="div-about-me">
+                <div>
+                    <img class="portrait-image" src="portraitPhoto.jpg" alt="Profile" width="200" height="250" style="margin-bottom: 50px" />
+
+                </div>
+                <div class="raleway" style="text-align: center; line-height: 2">
+                    <p>Welcome to my page! I am a full stack developer from Orange County,
+                        California.
+                    </p>
+                    <p>I
+                        earned a
+                        bachelor's degree in Cognitive Science from UCLA with a specialization in computing for C++.
+                    </p>
+                    <p>I
+                        followed up with my programming experience by working on a social media app called Eleveight
+                        using
+                        mainly C#,
+                        SQL, and React.</p>
+                    <p>
+                        For your perusal, I've listed my past projects as well as my resume below.</p>
+                    <br></br>
+                    <a href="https://www.dropbox.com/s/imjw5rgrms99088/Moonsoo%20Jo%27s%20Resume.docx?dl=0" class="btn btn-primary"
+                        style="width: 100%; margin-bottom: 50px; padding-left: 0px; padding-right: 0px">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about end -->
+
+
+    <!-- portfolio -->
+
+
+
+
+
+    <section id="portfolio" class="s-portfolio">
+        <h1>Portfolio</h1>
+        <div class="container"><a href="https://github.com/jojuno/Work-Samples">
+                <img src="eleveight.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="text">
+                        <p style="font-size: 16px">C# .NET SQL React.js</p>
+                        <p><b>Eleveight</b></p>
+                        <p>Social media app based on scholarships for students, schools and funding organizations.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <br>
+        </br>
+        <div class="container"><a href="https://github.com/jojuno/Portfolio-Page">
+                <img src="Portfolio Page.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="text">
+                        <p style="font-size: 16px">HTML CSS</p>
+                        <p><b>Portfolio Page</b></p>
+                        <p>Designed a responsive personal portfolio page with a bio, resume and contact
+                            info.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+
+        <!-- <div class="row">
+
+                col-lg-2 to center the middle two cards
+                    <div class="card portfolio"><a href="https://github.com/jojuno/Work-Samples">
+                            <img src="eleveight.jpg" alt="Avatar" style="width: 100%; height: 150%"></img>
+                            <div class="container overlay">
+                                <div class="text">
+                                    <p>C# .NET SQL React.js</p>
+                                    <h4><b>Eleveight</b></h4>
+                                    <p>Social media app based on scholarships for students, schools and
+                                        organizations.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="card portfolio"><a href="https://github.com/jojuno/Beat-Rhino-Web-Page">
+                            <img src="Portfolio Page.jpg" alt="Avatar" style="width: 100%;"></img>
+                            <div class="container overlay">
+                                <div class="text">
+                                    <p>React.js HTML CSS</p>
+                                    <h4><b>Portfolio Page</b></h4>
+                                    <p>Designed a responsive personal portfolio page with a bio, resume and contact
+                                        info.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                col-lg-2 to center the middle two cards -->
+        <!-- <div class="col-lg-4"></div> -->
+
+    </section>
+
+    <!-- portfolio end -->
+
+    <!-- contact -->
+
+    <section id="contact" class="s-contact target-section">
+        <div class="text-center">
+            <h1>Contact</h1>
+            <div class="raleway">
+
+                <div class="social-media"><a class="contact" href="https://www.linkedin.com/in/moonsoojo/"><i class="fab fa-linkedin-in"></i>
+                        LinkedIn
+                    </a></div>
+                <div class="social-media"><a href="mailto:someone@example.com?Subject=Hello%20again"><i class="fas fa-envelope"></i>
+                        Email</a></div>
+                <div class="social-media"><a href="https://github.com/jojuno"><i class="fab fa-github"></i>
+                        GitHub</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact end -->
+
+    <!-- footer -->
+
+    <footer>
+        <div>Moon Jo&#174; 2018</div>
+    </footer>
+
+    <!-- footer end -->
+
+</body>
+
+</html>
